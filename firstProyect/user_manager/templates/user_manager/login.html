@@ -1,0 +1,8 @@
+<div class="col-12 col-lg-5 login d-flex flex-column">
+    <h4 class="login_title">Ya eres parte de la comunidad.</h4>
+    <form method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Ingresar</button>
+    </form>
+</div>
